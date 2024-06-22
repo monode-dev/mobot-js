@@ -1,5 +1,7 @@
 export const mobot = {
-  app: () => {
-    (window as any).iacConfig = { message: `Hello from Mobot in the web!` };
+  app: (config: { message: string }) => {
+    (window as any).iacConfig = {
+      message: `Hello ${config.message} from Mobot in the web!`,
+    };
   },
 } as const;
