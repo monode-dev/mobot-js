@@ -1,6 +1,6 @@
 {
   "name": "mobot-js",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "scripts": {
     "build": "tsc",
     "pub": "sucrase-node pub.ts",
