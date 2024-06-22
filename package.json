@@ -1,14 +1,15 @@
 {
   "name": "mobot-js",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "scripts": {
     "build": "tsc",
     "pub": "sucrase-node pub.ts",
     "pub:minor": "sucrase-node pub.ts -m",
     "pub:Major": "sucrase-node pub.ts -M"
   },
-  "main": "./dist/src/MobotJs.js",
-  "types": "./dist/src/MobotJs.d.ts",
+  "main": "./dist/MobotJs.js",
+  "module": "./dist/MobotJs.js",
+  "types": "./dist/MobotJs.d.ts",
   "devDependencies": {
     "@types/node": "^20.14.7",
     "semver": "^7.6.2",
