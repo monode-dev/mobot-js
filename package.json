@@ -1,6 +1,6 @@
 {
   "name": "mobot-js",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "scripts": {
     "build": "tsc",
     "pub": "sucrase-node pub.ts",
@@ -15,8 +15,8 @@
     "semver": "^7.6.2",
     "sucrase": "^3.35.0"
   },
-  "directories": {
-    "src": "src"
-  },
+  "files": [
+    "dist"
+  ],
   "license": "MIT"
 }
