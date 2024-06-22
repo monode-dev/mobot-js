@@ -1,8 +1,8 @@
 {
   "name": "mobot-js",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "scripts": {
-    "build": "tsc",
+    "build": "esbuild src/MobotJs.ts --bundle --minify --outfile=dist/MobotJs.js --tsconfig=tsconfig.json",
     "pub": "sucrase-node pub.ts",
     "pub:minor": "sucrase-node pub.ts -m",
     "pub:Major": "sucrase-node pub.ts -M"
