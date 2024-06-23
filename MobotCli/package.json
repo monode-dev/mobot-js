@@ -1,0 +1,38 @@
+{
+  "name": "mobot-cli",
+  "version": "0.0.37",
+  "description": "",
+  "main": "dist/src/mobot-cli.js",
+  "scripts": {
+    "build": "tsc",
+    "pub": "sucrase-node pub.ts",
+    "pub:minor": "sucrase-node pub.ts -m",
+    "pub:Major": "sucrase-node pub.ts -M"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/rollup": "^0.54.0",
+    "esbuild": "^0.21.5",
+    "semver": "^7.6.2",
+    "sucrase": "^3.35.0",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "puppeteer": "^22.11.2",
+    "vite": "5.2.12"
+  },
+  "bin": {
+    "mobot": "dist/src/mobot-cli.js",
+    "mbt": "dist/src/mobot-cli.js",
+    "mob": "dist/src/mobot-cli.js"
+  },
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "package.json"
+  ]
+}
