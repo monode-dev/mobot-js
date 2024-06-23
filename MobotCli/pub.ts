@@ -48,10 +48,11 @@ try {
   console.log("Successfully published the package");
 
   // Commit the version change
-  execSync(`git add .`, { cwd: __dirname });
-  execSync(`git commit -m "Publishing ${newVersion}"`, { cwd: __dirname });
-  execSync(`git pull`), { cwd: __dirname };
-  execSync(`git push`, { cwd: __dirname });
+  const rootDir = resolve(__dirname, `../`);
+  execSync(`git add .`, { cwd: rootDir });
+  execSync(`git commit -m "Publishing ${newVersion}"`, { cwd: rootDir });
+  execSync(`git pull`, { cwd: rootDir });
+  execSync(`git push`, { cwd: rootDir });
   console.log("Successfully pushed to GitHub");
 } catch (err) {
   console.error("Error reading, updating, or publishing the package.", err);
